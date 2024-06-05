@@ -1,7 +1,10 @@
 import math
 
 # Your sales numbers
-sales = [2, 8, 11, 8, 12, 13, 15, 15, 11, 14, 13.75, 18, 20, 21, 25]
+sales_input = input("Please enter your sales numbers, separated by commas: ")
+
+# Convert the input string to a list of floats
+sales = [float(x) for x in sales_input.split(',')]
 
 # Mean of the sales numbers
 mean = sum(sales) / len(sales)
